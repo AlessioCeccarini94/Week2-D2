@@ -81,13 +81,40 @@ if ((totalShoppingCart) => 50) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-
+let max, min, mid
 const n3 = 20
 const n4 = 11
 const n5 = 19
-if ((n3 > n4, n5)) {
-  console.log()
+if (n3 >= n4 && n3 >= n5) {
+  max = n3
+  if (n4 >= n5) {
+    mid = n4
+    min = n5
+  } else {
+    mid = n5
+    min = n4
+  }
+} else if (n4 >= n3 && n4 >= n5) {
+  max = n4
+  if (n3 >= n5) {
+    mid = n3
+    min = n5
+  } else {
+    mid = n5
+    min = n3
+  }
+} else {
+  max = n5
+  if (n3 >= n4) {
+    mid = n3
+    min = n4
+  } else {
+    mid = n4
+    min = n3
+  }
 }
+
+console.log(max, mid, min)
 
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
