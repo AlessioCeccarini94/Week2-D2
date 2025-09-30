@@ -135,10 +135,10 @@ console.log("pari", n5 % 2 == 0)
 /*ESERCIZIO 10
   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
   */
-let val = 7
-if (val < 10) {
+let val = 2
+if (val < 5) {
   console.log("Meno di 10")
-} else if (val < 5) {
+} else if (val < 10) {
   console.log("Meno di 5")
 } else {
   console.log("Uguale a 10 o maggiore")
@@ -183,7 +183,8 @@ console.log(me)
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const number = []
+number.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 
 /* ESERCIZIO 15
   Scrivi del codice per sostituire l'ultimo elemento dell'array, ovvero il valore 10, con il valore 100.
@@ -191,5 +192,5 @@ const number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-number.splice(8, 10, 100)
+number.splice(9, 1, 100)
 console.log(number)
